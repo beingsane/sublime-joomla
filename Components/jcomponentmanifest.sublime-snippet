@@ -1,14 +1,14 @@
 <snippet>
 	<content><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<extension type="component" version="${1:${TM_MANIFEST_VERSION}}" method="upgrade">
-	<name>com_${2:${TM_PROJECT/(.+)/\L\1/g}}</name>
-	<author>${3:${TM_FULLNAME}}</author>
+<extension type="component" version="${1:2.5.0}" method="upgrade">
+	<name>com_${2:name}</name>
+	<author>${3:Rene Bentes Pinto}</author>
 	<creationDate>$4</creationDate>
-	<copyright>(C) ${5:$TM_YEAR} ${6:$TM_ORGANIZATION_NAME}. All rights reserved.</copyright>
+	<copyright>(C) ${5:2014} ${6:Rene Bentes Pinto, Inc}. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see http://www.gnu.org/licenses/gpl-2.0.html</license>
-	<authorEmail>${7:${TM_EMAIL}}</authorEmail>
-	<authorUrl>http://www.${8:${TM_WEBSITE}}</authorUrl>
-	<version>${9:${TM_VERSION}}</version>
+	<authorEmail>${7:renebentes@yahoo.com.br}</authorEmail>
+	<authorUrl>$8</authorUrl>
+	<version>${9:1.0.0}</version>
 	<description>COM_${2/(.+)/\U\1/g}_XML_DESCRIPTION</description>
 	<scriptfile>script.php</scriptfile>
 	<install>
@@ -24,7 +24,7 @@
 	<update>
 		<schemas>
 			<schemapath type="mysql">sql/updates/mysql</schemapath>
-        </schemas>
+    </schemas>
 	</update>
 	<files folder="site">
 		<folder>controllers</folder>
@@ -38,7 +38,8 @@
 		<filename>router.php</filename>
 	</files>
 	<languages folder="site">
-		<language tag="${10:${TM_LANGUAGE}}">language/$10/$10.com_${2/(.+)/\L\1/g}.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.com_${2/(.+)/\L\1/g}.ini</language>
+		<language tag="pt-BR">language/pt-BR/pt-BR.com_${2/(.+)/\L\1/g}.ini</language>
 	</languages>
 	<media folder="media" destination="com_${2/(.+)/\L\1/g}">
 		<folder>css</folder>
@@ -50,7 +51,7 @@
 		<menu view="cpanel" img="../media/com_${2/(.+)/\L\1/g}/images/menu/${2/(.+)/\L\1/g}.png" link="option=com_${2/(.+)/\L\1/g}" alt="${2/(.+)/\u\1/g}">com_${2/(.+)/\L\1/g}</menu>
 		<submenu>
 			<menu view="cpanel" img="../media/com_${2/(.+)/\L\1/g}/images/menu/${2/(.+)/\L\1/g}_cpanel.png" link="option=com_${2/(.+)/\L\1/g}" alt="${2/(.+)/\u\1/g}/Cpanel">com_${2/(.+)/\L\1/g}_cpanel</menu>
-			<menu view="${11:hello}" img="../media/com_${2/(.+)/\L\1/g}/images/menu/${12:${11/(.+)/\L\1/g}}.png" link="option=com_${2/(.+)/\L\1/g}&amp;view=${11/(.+)/\L\1/g}" alt="${2/(.+)/\u\1/g}/${11/(.+)/\u\1/g}">com_${2/(.+)/\L\1/g}_${11/(.+)/\L\1/g}</menu>
+			<menu view="${10:hello}" img="../media/com_${2/(.+)/\L\1/g}/images/menu/${11:${10/(.+)/\L\1/g}}.png" link="option=com_${2/(.+)/\L\1/g}&amp;view=${10/(.+)/\L\1/g}" alt="${2/(.+)/\u\1/g}/${10/(.+)/\u\1/g}">com_${2/(.+)/\L\1/g}_${10/(.+)/\L\1/g}</menu>
 			<menu view="categories" img="../media/com_${2/(.+)/\L\1/g}/images/menu/${2/(.+)/\L\1/g}_category.png" link="option=com_categories&amp;extension=com_${2/(.+)/\L\1/g}" alt="${2/(.+)/\u\1/g}/Categories">com_${2/(.+)/\L\1/g}_categories</menu>
 		</submenu>
 		<files folder="admin">
@@ -68,12 +69,15 @@
 			<filename>${2/(.+)/\L\1/g}.php</filename>
 		</files>
 		<languages folder="admin">
-			<language tag="$10">language/$10/$10.com_${2/(.+)/\L\1/g}.ini</language>
-			<language tag="$10">language/$10/$10.com_${2/(.+)/\L\1/g}.sys.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_${2/(.+)/\L\1/g}.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_${2/(.+)/\L\1/g}.sys.ini</language>
+			<language tag="pt-BR">language/pt-BR/pt-BR.com_${2/(.+)/\L\1/g}.ini</language>
+			<language tag="pt-BR">language/pt-BR/pt-BR.com_${2/(.+)/\L\1/g}.sys.ini</language>
 		</languages>
 	</administration>
 </extension>
 ]]>
 	</content>
 	<tabTrigger>jcomponentmanifest</tabTrigger>
+	<description>Arquivo de manifesto de componentes Joomla</description>
 </snippet>

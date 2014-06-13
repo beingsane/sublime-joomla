@@ -1,0 +1,126 @@
+<snippet>
+  <content><![CDATA[/**
+ * Script file of ${1:Project} ${2:component}
+ */
+class ${4:Com}_${1/(.+)/\u\1/g}InstallerScript
+{
+  /**
+     * Extension name
+     *
+     * @var string
+     */
+    private \$_extension = '${4/(.+)/\L\1/g}_${1/(.+)/\L\1/g}';
+
+    /**
+     * Array of sub extensions package
+     *
+     * @var array
+     */
+    private \$_subextensions = array(
+        'modules' => array(
+            ),
+        'plugins' => array(
+            )
+        );
+
+    /**
+     * Array of obsoletes files and folders
+     *
+     * @var array
+     */
+    private \$_obsoletes = array(
+        'files' => array(
+            ),
+        'folders' => array(
+            )
+        );
+
+  /**
+   * Method to install the ${2/(.+)/\L\1/g}
+   *
+   * @param JInstaller \$parent
+   */
+  function install(\$parent)
+  {
+    ${5:echo JText::_('${4/(.+)/\U\1/g}_${1/(.+)/\U\1/g}_INSTALL_TEXT');}
+  }
+
+  /**
+   * Method to uninstall the ${2/(.+)/\L\1/g}
+   *
+   * @param JInstaller \$parent
+   */
+  function uninstall(\$parent)
+  {
+    ${6:echo JText::_('${4/(.+)/\U\1/g}_${1/(.+)/\U\1/g}_UNINSTALL_TEXT');}
+  }
+
+  /**
+   * Method to update the ${2/(.+)/\L\1/g}
+   *
+   * @param JInstaller \$parent
+   */
+  function update(\$parent)
+  {
+    ${7:echo JText::_('${4/(.+)/\U\1/g}_${1/(.+)/\U\1/g}_UPDATE_TEXT');}
+  }
+
+  /**
+   * Method to run before an install/update/uninstall method
+   *
+   * @param string    \$type Installation type (install, update, discover_install)
+   * @param JInstaller  \$parent Parent object
+   */
+  function preflight(\$type, \$parent)
+  {
+    $8
+  }
+
+  /**
+   * Method to run after an install/update/uninstall method
+   *
+   * @param string    \$type install, update or discover_update
+   * @param JInstaller  \$parent
+   */
+  function postflight(\$type, \$parent)
+  {
+    $9
+  }
+
+  /**
+   * Method for checking compatibility installation environment
+   *
+   * @param JInstaller    $parent Parent object
+   * @return bool         True if the installation environment is compatible
+   */
+  private function _checkCompatible(\$parent)
+  {
+    // Get the application.
+    \$app         = JFactory::getApplication();
+    \$min_version = (string) \$parent->get('manifest')->attributes()->version;
+    \$jversion    = new JVersion;
+
+    if (!\$jversion->isCompatible(\$min_version))
+    {
+      \$app->enqueueMessage(JText::sprintf('${4/(.+)/\U\1/g}_${1/(.+)/\U\1/g}_VERSION_UNSUPPORTED', \$min_version), 'error');
+      return false;
+    }
+
+    // Storing old release number for process in postflight.
+    if ($route == 'update')
+    {
+      \$this->oldRelease = \$this->getParam('version');
+
+      // Check if update is allowed (only update from 1.0.0 and higher).
+      if (version_compare(\$this->oldRelease, '1.0.0', '<'))
+      {
+          \$app->enqueueMessage(JText::sprintf('${4/(.+)/\U\1/g}_${1/(.+)/\U\1/g}_UPDATE_UNSUPPORTED', \$this->oldRelease), 'error');
+          return false;
+        }
+    }
+  }
+}
+]]></content>
+  <tabTrigger>jinstallerscript</tabTrigger>
+  <description>Script de instalação Joomla</description>
+</snippet>

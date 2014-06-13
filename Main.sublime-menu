@@ -19,68 +19,7 @@
                 "command": "open_file",
                 "args": {"file": "${packages}/JoomlaProjects/README.md"},
                 "caption": "README"
-              },
-              { "caption": "-" },
-              {
-                "command": "open_file",
-                "args": {"file": "${packages}/JoomlaProjects/JoomlaProjects.sublime-settings"},
-                "caption": "Settings – Default"
-              },
-              {
-                "command": "open_file",
-                "args": {"file": "${packages}/User/JoomlaProjects.sublime-settings"},
-                "caption": "Settings – User"
-              },
-              { "caption": "-" },
-              {
-                "command": "open_file",
-                "args": {
-                    "file": "${packages}/JoomlaProjects/Default (OSX).sublime-keymap",
-                    "platform": "OSX"
-                },
-                "caption": "Key Bindings – Default"
-              },
-              {
-                "command": "open_file",
-                "args": {
-                  "file": "${packages}/JoomlaProjects/Default (Linux).sublime-keymap",
-                  "platform": "Linux"
-                },
-                "caption": "Key Bindings – Default"
-              },
-              {
-                "command": "open_file",
-                "args": {
-                    "file": "${packages}/JoomlaProjects/Default (Windows).sublime-keymap",
-                    "platform": "Windows"
-                },
-                "caption": "Key Bindings – Default"
-              },
-              {
-                "command": "open_file",
-                "args": {
-                    "file": "${packages}/User/Default (OSX).sublime-keymap",
-                    "platform": "OSX"
-                },
-                "caption": "Key Bindings – User"
-              },
-              {
-                "command": "open_file",
-                "args": {
-                    "file": "${packages}/User/Default (Linux).sublime-keymap",
-                    "platform": "Linux"
-                },
-                "caption": "Key Bindings – User"
-              },
-              {
-                "command": "open_file",
-                "args": {
-                    "file": "${packages}/User/Default (Windows).sublime-keymap",
-                    "platform": "Windows"
-                },
-                "caption": "Key Bindings – User"
-              },
-              { "caption": "-" }
+              }
             ]
           }
         ]
