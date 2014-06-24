@@ -48,13 +48,13 @@
 		<filename>index.html</filename>
 	</media>
 	<administration>
-		<menu view="cpanel" img="../media/com_${2/(.+)/\L\1/g}/images/menu/${2/(.+)/\L\1/g}.png" link="option=com_${2/(.+)/\L\1/g}" alt="${2/(.+)/\u\1/g}">com_${2/(.+)/\L\1/g}</menu>
+		<menu img="../media/com_${2/(.+)/\L\1/g}/images/menu/${2/(.+)/\L\1/g}.png">com_${2/(.+)/\L\1/g}</menu>
 		<submenu>
-			<menu view="cpanel" img="../media/com_${2/(.+)/\L\1/g}/images/menu/${2/(.+)/\L\1/g}_cpanel.png" link="option=com_${2/(.+)/\L\1/g}" alt="${2/(.+)/\u\1/g}/Cpanel">com_${2/(.+)/\L\1/g}_cpanel</menu>
-			<menu view="${10:hello}" img="../media/com_${2/(.+)/\L\1/g}/images/menu/${11:${10/(.+)/\L\1/g}}.png" link="option=com_${2/(.+)/\L\1/g}&amp;view=${10/(.+)/\L\1/g}" alt="${2/(.+)/\u\1/g}/${10/(.+)/\u\1/g}">com_${2/(.+)/\L\1/g}_${10/(.+)/\L\1/g}</menu>
-			<menu view="categories" img="../media/com_${2/(.+)/\L\1/g}/images/menu/${2/(.+)/\L\1/g}_category.png" link="option=com_categories&amp;extension=com_${2/(.+)/\L\1/g}" alt="${2/(.+)/\u\1/g}/Categories">com_${2/(.+)/\L\1/g}_categories</menu>
+			<menu link="option=com_${2/(.+)/\L\1/g}" view="cpanel" img="../media/com_${2/(.+)/\L\1/g}/images/menu/${2/(.+)/\L\1/g}_cpanel.png" alt="${2/(.+)/\u\1/g}/Cpanel">COM_${2/(.+)/\U\1/g}_CPANEL</menu>
+			<menu link="option=com_${2/(.+)/\L\1/g}" view="${10:hello}" img="../media/com_${2/(.+)/\L\1/g}/images/menu/${10/(.+)/\L\1/g}.png" alt="${2/(.+)/\u\1/g}/${10/(.+)/\u\1/g}">COM_${2/(.+)/\U\1/g}_${10/(.+)/\U\1/g}</menu>
+			${11:<menu link="option=com_categories&amp;extension=com_${2/(.+)/\L\1/g}" view="categories" img="../media/com_${2/(.+)/\L\1/g}/images/menu/${2/(.+)/\L\1/g}_category.png" alt="${2/(.+)/\u\1/g}/Categories">COM_${2/(.+)/\U\1/g}_CATEGORIES</menu>}
 		</submenu>
-		<files folder="admin">
+		<files folder="administrator">
 			<folder>controllers</folder>
 			<folder>help</folder>
 			<folder>helpers</folder>
@@ -68,15 +68,14 @@
 			<filename>index.html</filename>
 			<filename>${2/(.+)/\L\1/g}.php</filename>
 		</files>
-		<languages folder="admin">
+		<languages folder="administrator">
 			<language tag="en-GB">language/en-GB/en-GB.com_${2/(.+)/\L\1/g}.ini</language>
 			<language tag="en-GB">language/en-GB/en-GB.com_${2/(.+)/\L\1/g}.sys.ini</language>
 			<language tag="pt-BR">language/pt-BR/pt-BR.com_${2/(.+)/\L\1/g}.ini</language>
 			<language tag="pt-BR">language/pt-BR/pt-BR.com_${2/(.+)/\L\1/g}.sys.ini</language>
 		</languages>
 	</administration>
-</extension>
-]]>
+</extension>]]>
 	</content>
 	<tabTrigger>jcomponentmanifest</tabTrigger>
 	<description>Arquivo de manifesto de componentes Joomla</description>

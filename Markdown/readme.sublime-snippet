@@ -33,12 +33,7 @@ Release Notes
 -------------
 
 #####Legend:
-  + Added
-  - Removed
-  ^ Updated
-  * Bugfix
-  # Secure fix
-  ! Relevant Message
+  \+ Added \- Removed ^ Updated \* Bugfix \# Secure fix ! Relevant Message
 
 ######1.0.0
   ${11}

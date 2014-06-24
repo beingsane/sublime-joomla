@@ -48,12 +48,7 @@ class ${1/(.+)/\u\1/g}Controller extends JControllerLegacy
 	 */
 	public function display(\$cachable = false, \$urlparams = false)
 	{
-		// Load the submenu.
-		${1/(.+)/\u\1/g}Helper::addSubmenu(\$this->input->get('view', '${3/(.+)/\L\1/g}'));
-
-		\$view   = \$this->input->get('view', '${3/(.+)/\L\1/g}');
-		\$layout = \$this->input->get('layout', 'default');
-		\$id     = \$this->input->get('id');
+		require_once JPATH_COMPONENT . '/helpers/${1/(.+)/\L\1/g}.php';
 
 		parent::display();
 
