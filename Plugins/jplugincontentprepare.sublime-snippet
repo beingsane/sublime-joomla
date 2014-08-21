@@ -1,0 +1,23 @@
+<snippet>
+  <content><![CDATA[/**
+ * Method is called by the view
+ *
+ * @param   string  \$context   The context of the content being passed to the plugin.
+ * @param   object  &\$row      The content object.  Note \$row->text is also available
+ * @param   object  &\$params   The content params.
+ * @param   integer \$page      The 'page' number.
+ *
+ * @return  void
+ *
+ * @since ${1:2.5}
+ */
+public function onContentPrepare(\$context, &\$row, &\$params, \$page = 0)
+{
+  $2
+
+  return true;
+}
+]]></content>
+  <tabTrigger>jplugincontentprepare</tabTrigger>
+  <description>Adiciona método onContentPrepare para Plugin</description>
+</snippet>
