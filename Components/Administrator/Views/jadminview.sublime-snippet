@@ -8,7 +8,7 @@
  * @subpackage  com_${2/(.+)/\L\1/g}
  * @since       2.5
  */
-class ${2/(.+)/\u\1/g}View${1/(.+)/\u\1/g} extends JView
+class ${2/(.+)/\u\1/g}View${1/(.+)/\u\1/g} extends JViewLegacy
 {
 	/**
 	 * Method to display the view.
@@ -42,12 +42,17 @@ class ${2/(.+)/\u\1/g}View${1/(.+)/\u\1/g} extends JView
 	 */
 	protected function addToolbar()
 	{
+		\$version = new JVersion;
+
 		require_once JPATH_COMPONENT . '/helpers/${2/(.+)/\L\1/g}.php';
 
 		\$canDo = ${2/(.+)/\u\1/g}Helper::getActions();
 		\$user = JFactory::getUser();
 
-		JToolBarHelper::title(JText::_('COM_${2/(.+)/\U\1/g}_MANAGER_${1/(.+)/\U\1/g}'), '${1/(.+)/\L\1/g}.png');
+		if (\$version->isCompatible('2.5'))
+			JToolBarHelper::title(JText::_('COM_${2/(.+)/\U\1/g}_MANAGER_${1/(.+)/\U\1/g}'), '${1/(.+)/\L\1/g}.png');
+		else
+			JToolBarHelper::title(JText::_('COM_${2/(.+)/\U\1/g}_MANAGER_${1/(.+)/\U\1/g}'), 'home-2 ${1/(.+)/\L\1/g}');
 
 		if (\$canDo->get('core.admin'))
 		{
@@ -59,4 +64,5 @@ class ${2/(.+)/\u\1/g}View${1/(.+)/\u\1/g} extends JView
 	}
 }]]></content>
 	<tabTrigger>jadminview</tabTrigger>
+	<description>Arquivo para criação de View Geral</description>
 </snippet>
