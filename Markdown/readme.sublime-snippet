@@ -12,17 +12,17 @@ Requirements
 Author
 ------
 
-${5:Rene Bentes Pinto}
+[${5:Rene Bentes Pinto}](http://github.com/${6:renebentes})
 
 License
 --------
 
-* This ${6:Template} licensed under the terms of the [${7:GNU/GPLv2}](${8:http://www.gnu.org/licenses/gpl-2.0.html}) license.
+* This ${7:Template} licensed under the terms of the [${8:GNU/GPLv2}](${9:http://www.gnu.org/licenses/gpl-2.0.html}) license.
 
 Bugs/Requests
 -------------
 
-You can [report a bug or request a feature here](http://github.com/${9:renebentes}/${2/(.+)/\L\1/g}/issues)
+You can [report a bug or request a feature here](http://github.com/${6/(.+)/\L\1/g}/${2/(.+)/\L\1/g}/issues)
 
 TODO
 ----
@@ -32,12 +32,7 @@ ${10}
 Release Notes
 -------------
 
-#####Legend:
-  \+ Added \- Removed ^ Updated \* Bugfix \# Secure fix ! Relevant Message
-
-######1.0.0
-  ${11}
-  ! Estruturação do projeto
+You can [see the release notes here](http://github.com/${6/(.+)/\L\1/g}/${2/(.+)/\L\1/g}/blob/master/CHANGELOG.md)
 ]]></content>
   <tabTrigger>readme</tabTrigger>
   <description>Gerar conteúdo em arquivos README</description>

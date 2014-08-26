@@ -11,7 +11,7 @@ Requirements
 Author
 ------
 
-Rene Bentes Pinto
+[Rene Bentes Pinto](http://github.com/renebentes)
 
 License
 --------
@@ -31,13 +31,4 @@ TODO
 Release Notes
 -------------
 
-#####Legend:
-  + Added
-  - Removed
-  ^ Updated
-  * Bugfix
-  # Secure fix
-  ! Relevant Message
-
-######1.0.0
-  ! Estruturação do projeto
+You can [see the release notes here](http://github.com/${6/(.+)/\L\1/g}/${2/(.+)/\L\1/g}/blob/master/CHANGELOG.md)

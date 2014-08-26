@@ -8,7 +8,7 @@
 	<license>GNU General Public License version 2 or later; see http://www.gnu.org/licenses/gpl-2.0.html</license>
 	<authorEmail>${7:renebentes@yahoo.com.br}</authorEmail>
 	<authorUrl>$8</authorUrl>
-	<version>${9:1.0.0}</version>
+	<version>${9:0.1.0}</version>
 	<description>COM_${2/(.+)/\U\1/g}_XML_DESCRIPTION</description>
 	<scriptfile>script.php</scriptfile>
 	<install>

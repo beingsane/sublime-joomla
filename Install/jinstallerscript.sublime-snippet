@@ -58,7 +58,7 @@ class ${3/(.+)/\u\1/g}_${4/(.+)[_]/\u\1/g}${1/(.+)/\u\1/g}InstallerScript
    */
   function install(\$parent)
   {
-    ${6:echo JText::sprintf('${3/(.+)/\U\1/g}_${4/(.+)/\U\1/g}${1/(.+)/\U\1/g}_INSTALL_TEXT', \$this->_release);}
+    ${6:echo '<p>' . JText::sprintf('${3/(.+)/\U\1/g}_${4/(.+)/\U\1/g}${1/(.+)/\U\1/g}_INSTALL_TEXT', \$this->_release) . '</p>';}
   }
 
   /**
@@ -68,7 +68,7 @@ class ${3/(.+)/\u\1/g}_${4/(.+)[_]/\u\1/g}${1/(.+)/\u\1/g}InstallerScript
    */
   function uninstall(\$parent)
   {
-    ${7:echo JText::sprintf('${3/(.+)/\U\1/g}_${4/(.+)/\U\1/g}${1/(.+)/\U\1/g}_UNINSTALL_TEXT', \$this->_release);}
+    ${7:echo '<p>' . JText::sprintf('${3/(.+)/\U\1/g}_${4/(.+)/\U\1/g}${1/(.+)/\U\1/g}_UNINSTALL_TEXT', \$this->_release) . '</p>';}
   }
 
   /**
@@ -78,7 +78,7 @@ class ${3/(.+)/\u\1/g}_${4/(.+)[_]/\u\1/g}${1/(.+)/\u\1/g}InstallerScript
    */
   function update(\$parent)
   {
-    ${8:echo JText::sprintf('${3/(.+)/\U\1/g}_${4/(.+)/\U\1/g}${1/(.+)/\U\1/g}_UPDATE_TEXT', \$this->_release);}
+    ${8:echo '<p>' . JText::sprintf('${3/(.+)/\U\1/g}_${4/(.+)/\U\1/g}${1/(.+)/\U\1/g}_UPDATE_TEXT', \$this->_release) . '</p>';}
   }
 
   /**
