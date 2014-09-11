@@ -3,6 +3,10 @@ CHANGELOG
 
 Este arquivo refere-se às mudanças realizadas desde a versão inicial de desenvolvimento.
 
+* 0.1.2 - 04/09/2014
+  * Added - jplugincontentdisplay
+  * Added - Snippet gitignore
+  * Added - csscomb
 * 0.1.1 - 26/08/2014
   * Added - Incluído snippets jtemplatehelper
   * Updated - Snippet jheader modificado

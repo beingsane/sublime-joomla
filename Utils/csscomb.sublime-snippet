@@ -1,11 +1,12 @@
-{
+<snippet>
+  <content><![CDATA["config" : {
   "remove-empty-rulesets": true,
   "always-semicolon": true,
   "color-case": "lower",
   "block-indent": "  ",
   "color-shorthand": true,
   "element-case": "lower",
-  "eof-newline": true,
+  "eof-newline": false,
   "leading-zero": false,
   "quotes": "double",
   "sort-order-fallback": "abc",
@@ -23,4 +24,6 @@
   "tab-size": true,
   "unitless-zero": true,
   "vendor-prefix-align": true
-}
+}]]></content>
+  <tabTrigger>csscomb</tabTrigger>
+</snippet>
