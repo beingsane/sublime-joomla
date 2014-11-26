@@ -3,6 +3,9 @@ CHANGELOG
 
 Este arquivo refere-se às mudanças realizadas desde a versão inicial de desenvolvimento.
 
+* 0.1.3 - 26/11/2014
+  * Removed - posições snippet templatemanifest
+  * Added - pasta snippet templatemanifest
 * 0.1.2 - 04/09/2014
   * Added - jplugincontentdisplay
   * Added - Snippet gitignore

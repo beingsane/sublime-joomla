@@ -9,10 +9,11 @@
 	<authorUrl>$5</authorUrl>
 	<copyright>Copyright (C) ${6:2014} ${7:Rene Bentes Pinto, Inc}. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<version>${8:0.1.0}</version>
+	<version>${8:0.0.1}</version>
 	<description>TPL_${1/(.+)/\U\1/g}_XML_DESCRIPTION</description>
 	<files>
 		<folder>css</folder>
+		<folder>fonts</folder>
 		<folder>html</folder>
 		<folder>images</folder>
 		<folder>js</folder>
@@ -28,19 +29,16 @@
 		<filename>templateDetails.xml</filename>
 	</files>
 	<positions>
-		<position>bottom-article</position>
 		<position>copyright</position>
 		<position>debug</position>
 		<position>featured</position>
 		<position>footer</position>
 		<position>footer-bottom</position>
-		<position>header</position>
 		<position>left</position>
 		<position>login</position>
 		<position>rigth</position>
 		<position>search</position>
 		<position>sub-menu</position>
-		<position>top-article</position>
 		<position>top-menu</position>
 		<position>user-menu</position>
 	</positions>
