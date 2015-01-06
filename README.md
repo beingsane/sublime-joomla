@@ -6,7 +6,7 @@ Conjunto de snippets para criação de projetos Joomla em Sublime Text.
 Requirements
 ------------
 
-* [Joomla! 2.5+](http://www.joomla.org)
+* [Joomla! 3.0+](http://www.joomla.org)
 
 Author
 ------
@@ -21,7 +21,7 @@ License
 Bugs/Requests
 -------------
 
-You can [report a bug or request a feature here](http://github.com/renebentes/joomlaprojects/issues)
+You can [report a bug or request a feature here](http://github.com/renebentes/JoomlaProjects/issues)
 
 TODO
 ----
@@ -31,4 +31,4 @@ TODO
 Release Notes
 -------------
 
-You can [see the release notes here](http://github.com/${6/(.+)/\L\1/g}/${2/(.+)/\L\1/g}/blob/master/CHANGELOG.md)
+You can [see the release notes here](http://github.com/renebentes/JoomlaProjects/blob/master/CHANGELOG.md)

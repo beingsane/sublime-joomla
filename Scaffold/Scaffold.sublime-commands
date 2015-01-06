@@ -1,0 +1,22 @@
+[
+  {
+    "caption": "Joomla Projects: Scaffold - Create",
+    "command": "scaffold"
+  },
+  {
+    "caption": "Joomla Projects Preferences: Scaffold Default File Settings",
+    "command": "open_file",
+    "args":
+    {
+      "file": "${packages}/JoomlaProjects/Scaffold/Scaffold.sublime-settings"
+    }
+  },
+  {
+    "caption": "Joomla Projects Preferences: Scaffold User File Settings",
+    "command": "open_file",
+    "args":
+    {
+      "file": "${packages}/User/Base File.sublime-settings"
+    }
+  }
+]

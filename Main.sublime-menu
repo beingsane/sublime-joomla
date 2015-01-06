@@ -12,13 +12,79 @@
         "children":
         [
           {
-            "caption": "JoomlaProjects",
+            "caption": "Joomla Projects",
+            "mnemonic": "J",
+            "id": "joomla-projects",
             "children":
             [
               {
+                "caption": "Scaffold",
+                "mnemonic": "S",
+                "children":
+                [
+                  {
+                    "caption": "Create",
+                    "mnemonic": "C",
+                    "command": "scaffold"
+                  },
+                  { "caption": "-" },
+                  {
+                    "caption": "Settings - Default",
+                    "mnemonic": "S",
+                    "command": "open_file",
+                    "args":
+                    {
+                      "file": "${packages}/JoomlaProjects/Scaffold/Scaffold.sublime-settings"
+                    }
+                  },
+                  {
+                    "caption": "Settings - User",
+                    "mnemonic": "t",
+                    "command": "open_file",
+                    "args":
+                    {
+                      "file": "${packages}/User/Base File.sublime-settings"
+                    }
+                  },
+                  { "caption": "-" },
+                  {
+                    "caption": "How To",
+                    "mnemonic": "H",
+                    "command": "open_file",
+                    "args":
+                    {
+                      "file": "${packages}/JoomlaProjects/Scaffold/How-To.md"
+                    }
+                  }
+                ]
+              },
+              { "caption": "-" },
+              {
+                "caption": "README",
+                "mnemonic": "R",
                 "command": "open_file",
-                "args": {"file": "${packages}/JoomlaProjects/README.md"},
-                "caption": "README"
+                "args":
+                {
+                  "file": "${packages}/JoomlaProjects/README.md"
+                }
+              },
+              {
+                "caption": "CHANGELOG",
+                "mnemonic": "C",
+                "command": "open_file",
+                "args":
+                {
+                  "file": "${packages}/JoomlaProjects/CHANGELOG.md"
+                }
+              },
+              {
+                "caption": "LICENSE",
+                "mnemonic": "L",
+                "command": "open_file",
+                "args":
+                {
+                  "file": "${packages}/JoomlaProjects/LICENSE"
+                }
               }
             ]
           }

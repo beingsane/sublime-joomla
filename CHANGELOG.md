@@ -3,6 +3,8 @@ CHANGELOG
 
 Este arquivo refere-se às mudanças realizadas desde a versão inicial de desenvolvimento.
 
+* 0.2.0 - 29/12/2014
+  * Message - Divisão do projeto em pastas para snippets e plugins
 * 0.1.3 - 26/11/2014
   * Removed - posições snippet templatemanifest
   * Added - pasta snippet templatemanifest
