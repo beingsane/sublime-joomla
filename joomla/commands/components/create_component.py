@@ -10,5 +10,5 @@ class CreateComponentCommand(sublime_plugin.WindowCommand):
     except AttributeError:
       return self.window.folders()[0]
 
-      def run(self, *args, **kwargs):
-        self.get_config_path()
+  def run(self, *args, **kwargs):
+    self.get_config_path()
