@@ -1,3 +1,6 @@
 import sublime, sublime_plugin
 
-from .joomla.commands.components.create_component import CreateComponentCommand
+try:
+  from .joomla.commands.components.create_component import CreateComponentCommand
+except (ImportError, ValueError):
+  from joomla.commands.components.create_component import CreateComponentCommand
