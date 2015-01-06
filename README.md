@@ -1,7 +1,7 @@
-Joomla Snippets for Sublime Text - JoomlaProjects
+Joomla - sublime-joomla
 =============
 
-Conjunto de snippets para criação de projetos Joomla em Sublime Text.
+Conjunto de Snippets e Plugins para criação de projetos Joomla com Sublime Text.
 
 Requirements
 ------------
@@ -21,7 +21,7 @@ License
 Bugs/Requests
 -------------
 
-You can [report a bug or request a feature here](http://github.com/renebentes/JoomlaProjects/issues)
+You can [report a bug or request a feature here](http://github.com/renebentes/sublime-joomla/issues)
 
 TODO
 ----
@@ -31,4 +31,4 @@ TODO
 Release Notes
 -------------
 
-You can [see the release notes here](http://github.com/renebentes/JoomlaProjects/blob/master/CHANGELOG.md)
+You can [see the release notes here](http://github.com/renebentes/sublime-joomla/blob/master/CHANGELOG.md)

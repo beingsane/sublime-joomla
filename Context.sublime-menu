@@ -1,68 +1,49 @@
 [
   {
-    "caption": "Joomla Projects",
+    "caption": "Joomla",
     "mnemonic": "J",
-    "id": "joomla-projects",
+    "id": "joomla",
     "children":
     [
       {
-        "caption": "Scaffold",
-        "mnemonic": "S",
+        "caption": "Components",
+        "mnemonic": "C",
         "children":
         [
           {
             "caption": "Create",
             "mnemonic": "C",
-            "command": "scaffold"
-          },
-          { "caption": "-" },
-          {
-            "caption": "Settings - Default",
-            "mnemonic": "S",
-            "command": "open_file",
-            "args":
-            {
-              "file": "${packages}/JoomlaProjects/Scaffold/Scaffold.sublime-settings"
-            }
-          },
-          {
-            "caption": "Settings - User",
-            "mnemonic": "t",
-            "command": "open_file",
-            "args":
-            {
-              "file": "${packages}/User/Base File.sublime-settings"
-            }
-          },
-          { "caption": "-" },
-          {
-            "caption": "How To",
-            "mnemonic": "H",
-            "command": "open_file",
-            "args":
-            {
-              "file": "${packages}/JoomlaProjects/Scaffold/How-To.md"
-            }
+            "command": "create_component",
+            "args": {}
           }
         ]
       },
       { "caption": "-" },
+      {
+        "caption": "How To",
+        "mnemonic": "H",
+        "command": "open_file",
+        "args":
+        {
+          "file": "${packages}/sublime-joomla/Scaffold/How-To.md"
+        }
+      },
       {
         "caption": "README",
         "mnemonic": "R",
         "command": "open_file",
         "args":
         {
-          "file": "${packages}/JoomlaProjects/README.md"
+          "file": "${packages}/sublime-joomla/README.md"
         }
       },
       {
         "caption": "CHANGELOG",
-        "mnemonic": "C",
+        "mnemonic": "G",
         "command": "open_file",
         "args":
         {
-          "file": "${packages}/JoomlaProjects/CHANGELOG.md"
+          "file": "${packages}/sublime-joomla/CHANGELOG.md"
         }
       },
       {
@@ -71,7 +52,7 @@
         "command": "open_file",
         "args":
         {
-          "file": "${packages}/JoomlaProjects/LICENSE"
+          "file": "${packages}/sublime-joomla/LICENSE"
         }
       }
     ]
